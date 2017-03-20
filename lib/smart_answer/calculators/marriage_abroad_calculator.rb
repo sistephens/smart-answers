@@ -326,6 +326,7 @@ module SmartAnswer::Calculators
          china
          denmark
          france
+         greece
          hungary
          italy
          ireland
