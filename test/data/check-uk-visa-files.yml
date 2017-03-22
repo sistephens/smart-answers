@@ -1,7 +1,7 @@
 ---
-lib/smart_answer_flows/check-uk-visa.rb: 57dcc6003249401f31966f763b11ceaf
+lib/smart_answer_flows/check-uk-visa.rb: c7f45759c14e27a6dde291be2aafc9ca
 test/data/check-uk-visa-questions-and-responses.yml: 33c876a5b75defcf10610c0a81ed14ee
-test/data/check-uk-visa-responses-and-expected-results.yml: a9355fbf4777106432e88c6e3ef745ea
+test/data/check-uk-visa-responses-and-expected-results.yml: f8537c2d8ddb72305b04a4a2049a6489
 lib/smart_answer_flows/check-uk-visa/check_uk_visa.govspeak.erb: a442b4ddd169b26a401c70d145e5b44e
 lib/smart_answer_flows/check-uk-visa/outcomes/_b1_b2_visa_exception.govspeak.erb: 410e39d565d0a5caed2d1b8c20c1ca77
 lib/smart_answer_flows/check-uk-visa/outcomes/_stateless_or_refugee.govspeak.erb: a14d7807087e4f05e9fada8ac755ee2e
@@ -10,6 +10,7 @@ lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_m.govspeak.
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_nvn.govspeak.erb: 42c2cb29ee031b0a08d70838fa2748ca
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_y.govspeak.erb: 43c472d5d782ea4e863bb502008f4192
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage.govspeak.erb: 0c6e77127968507051f708b93b646f77
+lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage_nvn_ukot.govspeak.erb: 19f464f209ab6b3e64f2a7468dc76d60
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_medical_n.govspeak.erb: 1642f779661086644a241887072354b4
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_medical_y.govspeak.erb: c7f33df94de52c0797c48f3aaa1247cb
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_no_visa_needed.govspeak.erb: cb8160d99ed2b118d6fecb1dde51d844
