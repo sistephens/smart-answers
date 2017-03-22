@@ -1,5 +1,5 @@
 ---
-lib/smart_answer_flows/check-uk-visa.rb: c0c5e4cacd9efa5f51193b2b1ceaad90
+lib/smart_answer_flows/check-uk-visa.rb: a9436604119b32b42c5d9b51cc8c3f34
 test/data/check-uk-visa-questions-and-responses.yml: 33c876a5b75defcf10610c0a81ed14ee
 test/data/check-uk-visa-responses-and-expected-results.yml: d4bff3d681674200be6184f2af9e4185
 lib/smart_answer_flows/check-uk-visa/check_uk_visa.govspeak.erb: a442b4ddd169b26a401c70d145e5b44e
@@ -9,7 +9,6 @@ lib/smart_answer_flows/check-uk-visa/outcomes/outcome_diplomatic_business.govspe
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_m.govspeak.erb: b8c20bebba5c9aba8467b04ecb6cb2ab
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_nvn.govspeak.erb: 42c2cb29ee031b0a08d70838fa2748ca
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_joining_family_y.govspeak.erb: 43c472d5d782ea4e863bb502008f4192
-lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage.govspeak.erb: 0c6e77127968507051f708b93b646f77
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage_electronic_visa_waiver.govspeak.erb: 75ba568cec1904be105bc3c1fafaff8a
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage_nvn_ukot.govspeak.erb: 19f464f209ab6b3e64f2a7468dc76d60
 lib/smart_answer_flows/check-uk-visa/outcomes/outcome_marriage_taiwan.govspeak.erb: 346330d53482bcd5ed25614c2682ea55
