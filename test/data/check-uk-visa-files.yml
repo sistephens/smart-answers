@@ -1,5 +1,5 @@
 ---
-lib/smart_answer_flows/check-uk-visa.rb: a9436604119b32b42c5d9b51cc8c3f34
+lib/smart_answer_flows/check-uk-visa.rb: b999051ef9a7226f508cdf5f22e7acf0
 test/data/check-uk-visa-questions-and-responses.yml: 33c876a5b75defcf10610c0a81ed14ee
 test/data/check-uk-visa-responses-and-expected-results.yml: d4bff3d681674200be6184f2af9e4185
 lib/smart_answer_flows/check-uk-visa/check_uk_visa.govspeak.erb: a442b4ddd169b26a401c70d145e5b44e
