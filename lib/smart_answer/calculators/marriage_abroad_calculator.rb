@@ -314,11 +314,14 @@ module SmartAnswer::Calculators
     end
 
     def path_to_outcome
-      if two_questions_country?
-        return [ceremony_country, marriage_type_path_name]
+      case
+      when two_questions_country?
+        [ceremony_country, marriage_type_path_name]
+      when three_questions_country?
+        [ceremony_country, ceremony_location_path_name, marriage_type_path_name]
+      else
+        [ceremony_country, ceremony_location_path_name, partner_nationality_path_name, marriage_type_path_name]
       end
-
-      [ceremony_country, ceremony_location_path_name, partner_nationality_path_name, marriage_type_path_name]
     end
 
     def has_outcome_per_path?
@@ -340,6 +343,10 @@ module SmartAnswer::Calculators
          thailand
          vietnam
         ).include?(ceremony_country)
+    end
+
+    def three_questions_country?
+      %w(greece).include?(ceremony_country)
     end
 
     def two_questions_country?

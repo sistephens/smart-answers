@@ -2270,31 +2270,76 @@ class MarriageAbroadTest < ActiveSupport::TestCase
     end
   end
 
-  context "ceremony in Greece" do
-    setup do
-      add_response 'greece'
-    end
-
-    context "lives in 3rd country, all opposite-sex outcomes" do
+  context "For three questions country" do
+    context "when marriage ceremony is in a three questions country. For example Greece." do
       setup do
-        add_response 'third_country'
-        add_response 'partner_other'
-        add_response 'opposite_sex'
+        add_response 'greece'
       end
 
-      should "leads to outcome_marriage_abroad_in_country" do
-        assert_current_node :outcome_marriage_abroad_in_country
-      end
-    end
+      context "when user lives in Greece and partner is opposite sex" do
+        setup do
+          add_response 'ceremony_country'
+          add_response 'opposite_sex'
+        end
 
-    context "resident in Greece, all opposite-sex outcomes" do
-      setup do
-        add_response 'ceremony_country'
-        add_response 'partner_other'
-        add_response 'opposite_sex'
+        should "lead to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
       end
-      should "lead to outcome_marriage_abroad_in_country with Greece-specific appoitnment link and document requirements" do
-        assert_current_node :outcome_marriage_abroad_in_country
+
+      context "when user lives in Greece and partner is same sex" do
+        setup do
+          add_response 'ceremony_country'
+          add_response 'same_sex'
+        end
+
+        should "leads to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
+      end
+
+      context "when user lives in the UK and partner is opposite sex" do
+        setup do
+          add_response 'uk'
+          add_response 'opposite_sex'
+        end
+
+        should "leads to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
+      end
+
+      context "when user lives in the UK and partner is same sex" do
+        setup do
+          add_response 'uk'
+          add_response 'same_sex'
+        end
+
+        should "leads to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
+      end
+
+      context "when user lives in Third country and partner is opposite sex" do
+        setup do
+          add_response 'third_country'
+          add_response 'opposite_sex'
+        end
+
+        should "leads to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
+      end
+
+      context "when user lives in Third country and partner is same sex" do
+        setup do
+          add_response 'third_country'
+          add_response 'same_sex'
+        end
+
+        should "leads to outcome_marriage_abroad_in_country" do
+          assert_current_node :outcome_marriage_abroad_in_country
+        end
       end
     end
   end
