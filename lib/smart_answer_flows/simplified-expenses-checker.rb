@@ -256,10 +256,6 @@ module SmartAnswer
         precalculate :calculator do
           calculator
         end
-
-        precalculate :can_use_simple do
-          calculator.simple_total > calculator.current_scheme_costs
-        end
       end
       outcome :capital_allowance_result
       outcome :you_cant_claim_capital_allowance
