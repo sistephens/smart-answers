@@ -258,10 +258,6 @@ module SmartAnswer
           calculator
         end
 
-        precalculate :green_vehicle_price do
-          calculator.green_vehicle_price
-        end
-
         precalculate :dirty_vehicle_price do
           calculator.dirty_vehicle_price
         end
