@@ -346,6 +346,7 @@ module SmartAnswer::Calculators
     def two_questions_country?
       %w(
          china
+         cyprus
          france
          ireland
          italy
